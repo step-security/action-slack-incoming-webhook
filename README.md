@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <a href="https://github.com/actions/javascript-action/actions"><img alt="javscript-action status" src="https://github.com/actions/javascript-action/workflows/units-test/badge.svg"></a>
+  <a href="https://github.com/step-security/action-slack-incoming-webhook/actions"><img alt="action-slack-incoming-webhook status" src="https://github.com/step-security/action-slack-incoming-webhook/workflows/units-test/badge.svg"></a>
 </p>
 
 # GitHub Action for Slack Incoming Webhook
@@ -18,7 +18,7 @@
 
 ```yaml
 - name: Slack Notification
-  uses: step-security/action-slack-incoming-webhook@main
+  uses: step-security/action-slack-incoming-webhook@v1
   env:
     INCOMING_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
   with:
@@ -40,7 +40,7 @@ Here's what the Slack message would look like:
     run: echo "COMMIT_MESSAGE=${{ github.event.head_commit.message }}" | tr '\n' ' ' >> $GITHUB_ENV
 - name: Slack Notification on SUCCESS
   if: success()
-  uses: step-security/action-slack-incoming-webhook@main
+  uses: step-security/action-slack-incoming-webhook@v1
   env:
     INCOMING_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
   with:
