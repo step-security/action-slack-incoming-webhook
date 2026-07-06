@@ -1,0 +1,18 @@
+{
+   "schema_version": "1",
+   "onboarding_type": "copied",
+   "archived": false,
+   "maintained_action_name": "step-security/action-slack-incoming-webhook",
+   "upstream_full_repo_name": "tokorom/action-slack-incoming-webhook",
+   "action_type": "node",
+   "last_release": {
+     "tag_name": "v1.3.0",
+     "created_at": "2026-06-09T09:50:28Z",
+     "published_at": "2026-06-09T22:55:44Z"
+   },
+   "sync": {
+     "ignore_presets": [
+       "defaults_v1"
+     ]
+   }
+ }
